@@ -25,8 +25,8 @@ if(isset($_POST['action'])){
 <body>
     <form action="banque.php" method="post">
         Montant:<input type="text" value="<?php echo($montant) ?>" name="montant">
-        <input name="actiob" type="submit" value="OK">
-        <input name="actiob" type="submit" value="Comptes">
+        <input name="action" type="submit" value="OK">
+        <input name="action" type="submit" value="Comptes">
 
     </form>
 
