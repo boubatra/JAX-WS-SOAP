@@ -8,7 +8,7 @@ if(isset($_POST['action'])){
             $clientSOAP=new SoapClient("http://localhost:8585/BanqueWS?wsdl");
             $param=new stdClass();
             $param->montant=$montant;
-            $res=$clientSOAP->__soapCall("ConversionEuroToDh",array($param));
+            $res=$clientSOAP->__soapCall("conversionEuroToDh",array($param));
         }
     } elseif($action=="Comptes"){
             $clientSOAP=new SoapClient("http://localhost:8585/BanqueWS?wsdl");
